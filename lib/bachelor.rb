@@ -52,5 +52,5 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  seasonavg = seasonages.sum / seasonages.length
+  seasonavg = seasonages.sum(0.0) / seasonages.length
 end
