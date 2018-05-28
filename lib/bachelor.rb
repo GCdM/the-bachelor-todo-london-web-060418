@@ -47,7 +47,7 @@ end
 
 def get_average_age_for_season(data, season)
   seasonages = []
-  data[season_num].each do |contestantarray|
+  data[season].each do |contestantarray|
     seasonages << contestantarray["age"].to_f
   end
   seasonavg = seasonages.sum(0.0) / seasonages.length
